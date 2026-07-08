@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Asistente Visual",
+    "slug": "asistencia-visual",
+    "scheme": "orientago",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#0C447C"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Esta app usa la cámara para detectar obstáculos y describir tu entorno. El video nunca se graba ni se almacena.",
+        "NSLocationWhenInUseUsageDescription": "Esta app usa tu ubicación para guiarte paso a paso hacia tu destino."
+      }
+    },
+    "android": {
+      "package": "com.asistenciavisual.app",
+      "permissions": [
+        "CAMERA",
+        "VIBRATE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Esta app usa la cámara para detectar obstáculos en tiempo real. El video nunca se graba ni se almacena."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Esta app usa tu ubicación para guiarte paso a paso hacia tu destino."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8e2d94d4-3389-4ab9-a82f-3bbe39079aa3"
+      }
+    }
+  }
+}
