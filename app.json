@@ -4,6 +4,7 @@
     "slug": "asistencia-visual",
     "scheme": "orientago",
     "version": "1.0.0",
+    "newArchEnabled": false,
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
     "splash": {
